@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav><img src="images/logo.png" alt="logo">
+      <ul class="sidemenu" id="sidemenu">
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <box-icon name='cross' color="blue" onclick="closemenu()"></box-icon>
+      </ul>
+      <box-icon name='menu' color="blue" onclick="openmenu()"></box-icon>
+    </nav>
+    <div class="header-text">
+      <p>UI/UX Designer</p>
+      <h1>Hi, I'm <span>Kevin</span><br> Jen From India</h1>
+    </div>
+    </div>
+  </div>
+
+  <!-- about -->
+   <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/user.png" alt="">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor deleniti reiciendis adipisci, natus doloremque voluptas. Eaque soluta doloribus distinctio non delectus, nisi iure ut cum. Sequi quaerat quisquam odit reiciendis.</p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+              <li><span>Web Development</span><br>Web App Development</li>
+              <li><span>App Development</span><br>Building Android/iOS apps</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>Aman</span><br>Designing Web/App interfaces</li>
+              <li><span>Web Development</span><br>Web App Development</li>
+              <li><span>App Development</span><br>Building Android/iOS apps</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+              <li><span>Web Development</span><br>Web App Development</li>
+              <li><span>App Development</span><br>Building Android/iOS apps</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+
+   <!-- services -->
+   <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <box-icon name='code-alt' color="blue" size="md"></box-icon>
+          <h2>Web Design</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit quod laboriosam voluptas fuga molestias dolor magni velit corrupti quis.</p>
+          <a href="">Learn More</a>
+        </div>
+        <div>
+          <box-icon name='crop' color="blue" size="md"></box-icon>
+          <h2>Web Design</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit quod laboriosam voluptas fuga molestias dolor magni velit corrupti quis.</p>
+          <a href="">Learn More</a>
+        </div>
+        <div>
+          <box-icon type='logo' name='apple' color="blue" size="md"></box-icon>
+          <h2>Web Design</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit quod laboriosam voluptas fuga molestias dolor magni velit corrupti quis.</p>
+          <a href="">Learn More</a>
+        </div>
+      </div>
+    </div>
+   </div>
+
+   <!-- portfolio -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/work-1.png" alt="">
+          <div class="layer">
+            <h3>Social Media App</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci tempora, dolore voluptates.</p>
+            <a href="#"><box-icon name='link-external' color="pink"></box-icon></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-2.png" alt="">
+          <div class="layer">
+            <h3>Social Media App</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci tempora, dolore voluptates.</p>
+            <a href="#"><box-icon name='link-external' color="pink"></box-icon></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-3.png" alt="">
+          <div class="layer">
+            <h3>Social Media App</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci tempora, dolore voluptates.</p>
+            <a href="#"><box-icon name='link-external' color="pink"></box-icon></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+    </div>
+  </div>
+
+  <!-- contact -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><box-icon type='solid' name='send' color="blue"></box-icon> Nitin@gmail.com</p>
+          <p><box-icon type='solid' name='phone-call' color="blue"></box-icon> 95555846</p>
+          <div class="social-icons">
+            <a href="#"><box-icon type='logo' name='facebook-circle' color="blue"></box-icon></a>
+            <a href="#"><box-icon type='logo' name='twitter' color="blue"></box-icon></a>
+            <a href="#"><box-icon type='logo' name='whatsapp-square' color="blue"></box-icon></a>
+            <a href="#"><box-icon name='instagram' type='logo' color="blue"></box-icon></a>
+          </div>
+          <a href="images/Nitin Kumar Singh Resume.pdf" class="btn btn2" download>Download CV</a>
+        </div>
+        <div class="contact-right">
+         <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+         </form>
+         <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright by Kif dje ssi wnj <box-icon type='solid' name='heart' color="pink"></box-icon> awm wjsk sjkw msm eoei.</p>
+    </div>
+  </div>
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+      for (var tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (var tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+
+    function closemenu() {
+      sidemenu.style.right = "-200px";
+    }
+  </script>
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyKK3MSJJEpZ65dQ9mcqPTEcEaPrNjPFaDJ6EN8NboHiUufCw8q9Hh6566l3Slt-_dXNw/exec';
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById("msg");
+
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+          msg.innerHTML = "Message sent successfully";
+          setTimeout(function () {
+            msg.innerHTML = "";
+          }, 5000);
+          form.reset();
+        })
+        .catch(error => console.error('Error!', error.message));
+    });
+  </script>
+</body>
+</html>
